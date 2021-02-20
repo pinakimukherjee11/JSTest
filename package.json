@@ -1,15 +1,24 @@
 {
   "name": "jstest",
-  "version": "1.0.0",
-  "description": "Sample node app with Chai, Mocha, Sinon and proxyrequire",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "mocha || true"
+    "start": "node ./bin/www",
+    "test": "mocha || true",
+    "prepublish": "npm run test"
   },
-  "author": "Pinaki Mukherjee",
-  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  },
   "devDependencies": {
     "chai": "^4.3.0",
+    "chai-http": "^4.3.0",
+    "chai-string": "^1.5.0",
     "mocha": "^8.3.0",
     "sinon": "^9.2.4"
   }
