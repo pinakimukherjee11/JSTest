@@ -1,0 +1,16 @@
+{
+  "name": "jstest",
+  "version": "1.0.0",
+  "description": "Sample node app with Chai, Mocha, Sinon and proxyrequire",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "author": "Pinaki Mukherjee",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "mocha": "^8.3.0",
+    "sinon": "^9.2.4"
+  }
+}
